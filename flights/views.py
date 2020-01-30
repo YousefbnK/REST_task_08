@@ -3,7 +3,7 @@ from rest_framework.generics import ListAPIView, RetrieveAPIView, RetrieveUpdate
 from rest_framework.filters import SearchFilter, OrderingFilter
 from datetime import datetime
 
-from .models import Flight, Booking
+from .models import Flight, Booking, Profile
 from .serializers import FlightSerializer, BookingSerializer, BookingDetailsSerializer, UpdateBookingSerializer, RegisterSerializer, AdminUpdateBookingSerializer, ProfileSerializer
 from .permissions import IsBookingOwner, IsChangable
 
